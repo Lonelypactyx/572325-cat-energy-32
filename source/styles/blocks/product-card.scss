@@ -1,0 +1,28 @@
+.product-card__name a {
+  @include oswald-upper;
+  @include txt (16px, 20px, $txt-name);
+
+  @media (min-width: 768px) {
+    @include txt (20px, 24px, $txt-name);
+  }
+}
+
+.product-card__info-row {
+  display: flex;
+
+  @include txt (12px, 16px, $txt-name);
+
+  @media (min-width: 768px) {
+    @include txt (16px, 20px, $txt-name);
+  }
+}
+
+.product-card--more .product-card__name {
+  @include oswald-upper;
+}
+
+@media (min-width: 768px) {
+  .product-card:not(:last-child) {
+    background-color: $basic-grey;
+  }
+}

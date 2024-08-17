@@ -1,0 +1,12 @@
+.btn {
+  @include oswald-upper();
+  @include txt (16px, 20px, #fff);
+  background-color: $basic-green;
+  padding: 10px 30px;
+}
+
+@media (min-width: 768px) {
+  .btn:not(.btn--product) {
+    @include txt (20px, 26px, #fff);
+  }
+}

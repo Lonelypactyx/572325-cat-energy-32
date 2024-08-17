@@ -1,0 +1,8 @@
+.other-product__name {
+  @include oswald-upper;
+  @include txt (16px, 16px, $txt-name);
+
+  @media (min-width: 768px) {
+    @include txt (20px, 20px, $txt-name);
+  }
+}
