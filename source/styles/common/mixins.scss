@@ -13,14 +13,14 @@
   text-transform: uppercase;
 }
 
-@mixin txt ($font-size, $line-height, $color: #000) {
+@mixin font($font-size, $line-height, $color: #000000) {
   font-size: $font-size;
   line-height: $line-height;
   color: $color;
 }
 
-@mixin caption ($font-size, $line-height) {
+@mixin caption($font-size, $line-height) {
   font-family: "Oswald", sans-serif;
 
-  @include txt ($font-size, $line-height);
+  @include font($font-size, $line-height);
 }

@@ -1,10 +1,10 @@
 .guide__title {
-  @include caption (36px, 40px);
+  @include caption(36px, 40px);
 }
 
 @media (min-width: 768px) {
   .guide__title {
-    @include caption (60px, 60px);
+    @include caption(60px, 60px);
   }
 
   .guide__list {

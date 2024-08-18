@@ -11,10 +11,10 @@
 }
 
 .promo__title {
-  @include txt (36px, 36px, #fff);
+  @include font(36px, 36px, #ffffff);
 
   @media (min-width: 768px) {
-    @include txt (60px, 60px);
+    @include font(60px, 60px);
   }
 }
 
@@ -23,6 +23,6 @@
   text-transform: uppercase;
 
   @media (min-width: 768px) {
-    @include txt (20px, 20px);
+    @include font(20px, 20px);
   }
 }

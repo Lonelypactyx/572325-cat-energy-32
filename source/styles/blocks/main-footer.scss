@@ -1,9 +1,9 @@
 .main-footer__title {
   @include oswald-upper;
-  @include txt (16px, 20px, $dark-grey);
+  @include font(16px, 20px, $dark-grey);
 
   @media (min-width: 768px) {
-    @include txt (20px, 26px, $dark-grey);
+    @include font(20px, 26px, $dark-grey);
   }
 }
 
@@ -25,5 +25,5 @@
 }
 
 .main-footer__copyright {
-  @include txt (16px, 20px, $txt-color);
+  @include font(16px, 20px, $txt-color);
 }
