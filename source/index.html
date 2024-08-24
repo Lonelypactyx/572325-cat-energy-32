@@ -14,11 +14,11 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <a class="main-header__logo" aria-current="page">
       <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+        <source media="(min-width: $desktop)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: $tablet)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
         <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
       <picture>
@@ -26,22 +26,21 @@
       </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+      <button class="main-nav__toggle main-nav__toggle--open" type="button" onclick="this.classList.toggle('main-nav__toggle--open')">
+        <div class="main-nav__toggle-line"></div>
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" aria-current="page">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--current">
+          <a class="main-nav__link" aria-current="page">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -50,8 +49,8 @@
       <h1 class="promo__title">Функциональное<br>питание для котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
       <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo@1x.png 1x, images/promo@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x">
+        <source width="552" height="499" type="image/png" media="(min-width: $desktop)" srcset="images/promo@1x.png 1x, images/promo@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: $tablet)" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x">
         <img class="promo__img" src="images/promo-mobile@1x.png" srcset="images/promo-mobile@2x.png 2x" width="280" height="270" alt="Образец продукции Cat Energy со вкусом курицы">
       </picture>
       <a class="promo__link btn" href="#">подобрать программу</a>
@@ -102,14 +101,14 @@
       </dl>
       <div class="results__slider results-slider">
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: $tablet)" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x">
           <img class="results__img-before" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с лишним весом">
         </picture>
         <button class="results-slider__btn" type="button">
           <span class="visually-hidden">Оцените разницу</span>
         </button>
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: $tablet)" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x">
           <img class="results__img-after" src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после диетпитания от Cat Energy">
         </picture>
       </div>
@@ -122,8 +121,8 @@
         <h2 class="main-footer__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
         <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         <picture>
-          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <source width="1440" height="400" type="image/png" media="(min-width: $desktop)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: $tablet)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
           <img class="main-footer__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Наше местонахождение на карте">
         </picture>
       </div>
