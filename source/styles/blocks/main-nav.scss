@@ -26,7 +26,11 @@
   }
 
   @media (min-width: $desktop) {
-    @include font(20px, 30px);
+    @include font(20px, 1.5);
+
+    .main-nav--index & {
+      color: #ffffff;
+    }
   }
 }
 
