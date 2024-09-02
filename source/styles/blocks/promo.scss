@@ -1,10 +1,4 @@
 .promo {
-  display: grid;
-  font-family: "Oswald", sans-serif;
-  padding-top: 27px;
-  text-align: center;
-  justify-items: center;
-  color: #ffffff;
   background-repeat: no-repeat;
 
   @media (max-width: $tablet) {
@@ -12,6 +6,21 @@
     background-position: top center;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop) {
+    background-color: #4e4e52;
+    background-image: linear-gradient(to right, #ffffff 50%, $basic-green85 50%), url("../../images/promo-bg-desktop@1x.jpg"), linear-gradient(to right, transparent 80%, #404040);
+    background-position: center, calc(80% + 410px) top;
+  }
+}
+
+.promo__wrapper {
+  display: grid;
+  font-family: "Oswald", sans-serif;
+  padding-top: 27px;
+  text-align: center;
+  justify-items: center;
+  color: #ffffff;
 
   @media (min-width: $tablet) {
     text-align: left;
@@ -24,10 +33,7 @@
   }
 
   @media (min-width: $desktop) {
-    background-color: #4e4e52;
-    background-image: linear-gradient(to right, #ffffff 50%, $basic-green85 50%), url("../../images/promo-bg-desktop@1x.jpg");
-    background-position: top right;
-    padding: 145px 110px 52px;
+    padding-block: 145px 52px;
     grid-template-columns: 50% 1fr;
 
     & > *:not(picture) {
@@ -63,7 +69,7 @@
 }
 
 .promo__img {
-  @media (min-width: $tablet) and (max-width: $desktop) {
+  @media (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
     margin-top: -83px;
   }
 }
