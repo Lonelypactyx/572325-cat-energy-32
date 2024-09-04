@@ -1,26 +1,61 @@
 .results {
   background-color: $special-grey;
+  padding-block: 25px 40px;
+
+  @media (min-width: $tablet) {
+    background-image: linear-gradient(to top, $special-grey 462px, #ffffff 0);
+  }
 }
 
 .results__title {
   @include caption(36px, 40px);
+  margin-bottom: 40px;
 
   @media (min-width: $tablet) {
-    @include caption(60px, 60px);
+    @include caption(60px, 1);
   }
 }
 
+.results__text {
+  margin-bottom: 20px;
+}
+
+.results__list {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.results__item {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border: 1px solid $border-grey;
+  border-radius: 3px;
+  min-width: 124px;
+  min-height: 56px;
+  margin-bottom: 34px;
+}
+
 .results__name {
-  @include font(12px, 12px, $txt-color);
+  position: absolute;
+  bottom: -17px;
+  width: 70%;
+  padding-inline: 10px;
+  background-color: $special-grey;
+
+  @include font(12px, 1, $txt-color);
 
   @media (min-width: $tablet) {
-    @include font(14px, 14px, $txt-color);
+    @include font(14px, 1, $txt-color);
   }
 }
 
 .results__value {
   @include oswald-upper;
-  @include font(24px, 24px);
+  @include font(24px, 1);
 
   @media (min-width: $tablet) {
     @include font(30px, 37px);
@@ -29,11 +64,14 @@
 
 .results__cost {
   display: flex;
+  gap: 3px;
+  justify-content: center;
+  margin-bottom: 20px;
 
   @include oswald-upper;
   @include font(14px, 20px);
 
   @media (min-width: $tablet) {
-    @include font(20px, 20px);
+    @include font(20px, 1);
   }
 }

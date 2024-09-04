@@ -79,36 +79,38 @@
         <li class="guide__item guide__item-4">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
       </ol>
     </section>
-    <article class="results container">
-      <h2 class="visually-hidden">Результаты употребления Cat Energy</h2>
-      <h3 class="results__title">Живой пример</h3>
-      <p class="results__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="results__list">
-        <div class="results__item">
-          <dt class="results__name">снижение веса</dt>
-          <dd class="results__value">5 КГ</dd>
+    <article class="results">
+      <div class="results__wrapper container">
+        <h2 class="visually-hidden">Результаты употребления Cat Energy</h2>
+        <h3 class="results__title">Живой пример</h3>
+        <p class="results__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <dl class="results__list">
+          <div class="results__item">
+            <dt class="results__name">снижение веса</dt>
+            <dd class="results__value">5 КГ</dd>
+          </div>
+          <div class="results__item">
+            <dt class="results__name">затрачено времени</dt>
+            <dd class="results__value">60 ДНЕЙ</dd>
+          </div>
+        </dl>
+        <dl class="results__cost">
+          <dt>Затраты на питание:</dt>
+          <dd>15 000 РУБ.</dd>
+        </dl>
+        <div class="results__slider results-slider">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x">
+            <img class="results-slider__img-before" id="img1" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с лишним весом">
+          </picture>
+          <button class="results-slider__btn" id="comparebtn" type="button">
+            <span class="visually-hidden">Оцените разницу</span>
+          </button>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x">
+            <img class="results-slider__img-after" id="img2" src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после диетпитания от Cat Energy">
+          </picture>
         </div>
-        <div class="results__item">
-          <dt class="results__name">затрачено времени</dt>
-          <dd class="results__value">60 ДНЕЙ</dd>
-        </div>
-      </dl>
-      <dl class="results__cost">
-        <dt>Затраты на питание:</dt>
-        <dd>15 000 РУБ.</dd>
-      </dl>
-      <div class="results__slider results-slider">
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x">
-          <img class="results__img-before" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис с лишним весом">
-        </picture>
-        <button class="results-slider__btn" type="button">
-          <span class="visually-hidden">Оцените разницу</span>
-        </button>
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x">
-          <img class="results__img-after" src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после диетпитания от Cat Energy">
-        </picture>
       </div>
     </article>
   </main>
@@ -152,7 +154,6 @@
     for (var i = 0; i < guideItems.length; i++) {
       guideItems[i].style.backgroundImage = 'url("../../icons/stack.svg#guide' + (i + 1) + '")';
     } */
-
   </script>
 </body>
 
