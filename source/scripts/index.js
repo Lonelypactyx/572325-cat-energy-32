@@ -16,14 +16,14 @@ nav.classList.remove('no-js');
 
 // compare slider
 
-function compareSlider(i1, i2) {
+function compareSlider(i1, i2, btn) {
   const w = i1.offsetWidth;
   let clicked = 0;
-  comparebtn.addEventListener('mousedown', slideReady);
+  btn.addEventListener('mousedown', slideReady);
   window.addEventListener('mouseup', () => {
     clicked = 0;
   });
-  comparebtn.addEventListener('touchstart', slideReady);
+  btn.addEventListener('touchstart', slideReady);
   window.addEventListener('touchend', () => {
     clicked = 0;
   });
@@ -51,8 +51,8 @@ function compareSlider(i1, i2) {
     }
     i1.style.clipPath = `polygon(0 0, ${ pos }px 0, ${ pos }px 100%, 0 100%)`;
     i2.style.clipPath = `polygon(${ pos }px 0, 100% 0, 100% 100%, ${ pos }px 100%)`;
-    comparebtn.style.left = `${pos - 2}px`;
+    btn.style.left = `${pos - 2}px`;
   }
 }
 
-compareSlider(img1, img2);
+compareSlider(img1, img2, comparebtn);
