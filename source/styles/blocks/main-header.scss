@@ -34,3 +34,10 @@
     width: auto;
   }
 }
+
+.main-header__logo-txt {
+  @media (min-width: $desktop) {
+    width: 118px;
+    height: 21px;
+  }
+}

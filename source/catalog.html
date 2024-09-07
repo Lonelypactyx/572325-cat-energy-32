@@ -22,7 +22,7 @@
         <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
       <picture>
-        <img src="images/logo-txt.svg" width="101" height="18" alt="Cat Energy">
+        <img class="main-header__logo-txt" src="images/logo-txt.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
     <nav class="main-nav">
@@ -301,39 +301,43 @@
 
   <footer class="main-footer">
     <section class="main-footer__where">
-      <div class="main-footer__invitation">
+      <div class="main-footer__invitation main-footer__invitation--catalog">
         <h2 class="main-footer__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-        <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <picture>
-          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img class="main-footer__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Наше местонахождение на карте">
-        </picture>
+        <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 <p>Санкт-Петербург</p>
+        </address>
+      </div>
+      <picture>
+        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map@1x.png 1x, images/map@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="main-footer__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Наше местонахождение на карте">
+      </picture>
+    </section>
+    <section class="main-footer__contacts">
+      <h2 class="visually-hidden">Наши контакты в интернете</h2>
+      <div class="main-footer__contacts-wrapper container">
+        <a class="main-footer__logo-link" href="index.html">
+          <img class="main-footer__logo" src="images/logo-txt.svg" width="128" height="24" alt="Логотип Cat Energy">
+        </a>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--yt" href="#">
+              <span class="visually-hidden">Мы в Youtube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--tg" href="#">
+              <span class="visually-hidden">Мы в Telegram</span>
+            </a>
+          </li>
+        </ul>
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </section>
-    <div class="main-footer__contacts container">
-      <a class="main-footer__logo-link" href="index.html">
-        <img class="main-footer__logo" src="images/logo-txt.svg" width="128" height="24" alt="Cat Energy">
-      </a>
-      <ul class="main-footer__social social">
-        <li>
-          <a class="social__link social__link--vk" href="#">
-            <span class="visually-hidden">Мы в ВКонтакте</span>
-          </a>
-        </li>
-        <li>
-          <a class="social__link social__link--yt" href="#">
-            <span class="visually-hidden">Мы в Youtube</span>
-          </a>
-        </li>
-        <li>
-          <a class="social__link social__link--tg" href="#">
-            <span class="visually-hidden">Мы в Telegram</span>
-          </a>
-        </li>
-      </ul>
-      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
   </footer>
 </body>
 
