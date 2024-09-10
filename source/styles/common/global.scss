@@ -61,6 +61,28 @@ ol {
   }
 }
 
+.top-line {
+  position: relative;
+
+  &::before {
+    @include pseudoblock;
+    position: absolute;
+    height: 2px;
+    top: 12px;
+    width: 100%;
+    background-color: $basic-green;
+    z-index: -1;
+
+    @media (min-width: $tablet) {
+      top: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 20px;
+    }
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

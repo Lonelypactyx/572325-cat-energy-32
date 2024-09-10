@@ -69,7 +69,7 @@
 }
 
 .promo__img {
-  @media (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+  @media (min-width: $tablet) and (width < $desktop) {
     margin-top: -83px;
   }
 }

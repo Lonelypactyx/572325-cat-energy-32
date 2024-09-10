@@ -4,9 +4,10 @@
   &:not(:last-child) {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 17px;
+    align-content: space-between;
 
     & .product-card__link-btn {
-      @media (max-width: calc($tablet - 1px)) {
+      @media (width < $tablet) {
         grid-column: span 2;
       }
     }
@@ -18,7 +19,7 @@
 
       & .product-card__info,
       & .product-card__info-row:not(:last-child) {
-        border-bottom: 1px solid $border-grey;
+        border-bottom: $border;
       }
 
       & .product-card__info-row {

@@ -3,7 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
   padding-block: 40px 25px;
 
-  @media (max-width: calc($tablet - 1px)) {
+  @media (width < $tablet) {
     padding-inline: 0;
     border-top: 1px solid $prod-border;
   }
@@ -15,12 +15,12 @@
 
   @media (min-width: $desktop) {
     gap: 63px 80px;
-    padding-block: 40px 25px;
+    padding-bottom: 71px;
   }
 }
 
 .main-product__item {
-  @media (max-width: calc($tablet - 1px)) {
+  @media (width < $tablet) {
     padding: 20px 20px 25px;
     border-bottom: 1px solid $prod-border;
   }

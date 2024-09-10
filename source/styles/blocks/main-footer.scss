@@ -64,7 +64,7 @@
     }
   }
 
-  @media (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+  @media (min-width: $tablet) and (width < $desktop) {
     text-align: right;
   }
 }

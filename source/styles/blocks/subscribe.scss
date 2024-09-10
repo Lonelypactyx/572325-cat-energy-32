@@ -22,7 +22,7 @@
 
 .subscribe__input {
   padding: 13px;
-  border: 1px solid $border-grey;
+  border: $border;
 
   @include oswald-upper;
   @include font(20px, 30px, $txt-color);
