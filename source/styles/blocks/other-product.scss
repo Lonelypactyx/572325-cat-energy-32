@@ -37,11 +37,12 @@
 
   @media (min-width: $tablet) {
     gap: 70px;
+    justify-items: center;
   }
 
   @media (min-width: $desktop) {
     display: flex;
-    gap: 81px;
+    gap: 80px;
   }
 }
 
@@ -60,8 +61,8 @@
 
 .other-product__item {
   display: grid;
-  gap: 10px;
-  padding-block: 13px 19px;
+  gap: 11px;
+  padding-block: 13px 18px;
   border-bottom: $border;
 
   @media (min-width: $tablet) {
@@ -78,7 +79,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 30px;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
   }
 }
 
@@ -124,8 +125,6 @@
 }
 
 .other-product__link-btn {
-  margin-top: 2px;
-
   @media (min-width: $tablet) {
     grid-column: span 2;
   }
