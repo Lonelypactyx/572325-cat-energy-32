@@ -35,25 +35,45 @@
 }
 
 .subscribe__text {
-  text-align: center;
-
   @include caption(16px, 1.5);
+  text-align: center;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet) {
     @include caption(24px, 32px);
   }
 }
 
+.subscribe__form {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .subscribe__form > * {
   @media (width < $tablet) {
-    width: 100%;
+    min-width: max(280px, 85%);
   }
 }
 
 .subscribe__input {
+  @include oswald-upper;
+  @include font(20px, 1.5, $txt-color);
   padding: 13px;
   border: $border;
 
-  @include oswald-upper;
-  @include font(20px, 1.5, $txt-color);
+  @media (width < $tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet) {
+    flex-grow: 1;
+  }
+}
+
+.subscribe__btn {
+  @media (min-width: $tablet) {
+    width: 256px;
+  }
 }

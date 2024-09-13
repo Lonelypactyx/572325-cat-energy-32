@@ -1,17 +1,18 @@
 .giftbox {
   flex-grow: 1;
-  background: url("../../images/gift-bg-mobile@1x.jpg") center;
+  background-image: $gift-bg-mobile;
+  background-position: center;
   background-size: cover;
 
   @media (min-width: calc($tablet * 0.75)) and (width < $desktop) {
-    background: url("../../images/gift-bg-tablet@1x.jpg") center;
+    background-image: $gift-bg-tablet;
     min-height: 200px;
     width: 100%;
     max-width: 707px;
   }
 
   @media (min-width: $desktop) {
-    background: url("../../images/gift-bg-desktop@1x.jpg") center;
+    background-image: $gift-bg-desktop;
   }
 }
 
@@ -20,6 +21,7 @@
   display: grid;
   gap: 48px;
   text-align: center;
+  height: 100%;
   background-color: $basic-green85;
   padding: 59px 60px 43px;
 
@@ -31,7 +33,8 @@
 
   @media (min-width: $desktop) {
     padding: 56px 40px 43px;
-    gap: 46px;
+    gap: 10px;
+    align-content: space-between;
   }
 
   &::before {

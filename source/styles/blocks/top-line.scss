@@ -35,6 +35,6 @@
 
   @media (min-width: $desktop) {
     @include caption(40px, 1);
-    margin-left: 110px;
+    margin-left: calc(50% - 610px);
   }
 }

@@ -15,7 +15,7 @@
 
 .page__title {
   @include caption(36px, 1);
-  margin-top: 27px;
+  margin-block: 27px 40px;
 
   @media (min-width: $tablet) {
     @include caption(60px, 1);
