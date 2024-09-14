@@ -89,20 +89,44 @@
   }
 }
 
+.main-footer__logo-link {
+  width: 128px;
+  height: 24px;
+  background-color: $dark-grey;
+  mask: url("../../images/logo-txt.svg") no-repeat center;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #3e3e3e;
+  }
+
+  &:active {
+    background-color: #6b6b6b;
+  }
+}
+
 .main-footer__copyright {
   @include flex-between;
+  @include font(16px, 1.25, $txt-color);
   min-height: 34px;
   justify-self: stretch;
 
-  @include font(16px, 1.25, $txt-color);
-}
+  &::after {
+    @include pseudoblock;
+    flex-shrink: 0;
+    width: 27px;
+    height: 34px;
+    margin-left: 23px;
+    background-color: $decor-grey;
+    mask-image: url("../../icons/stack.svg#html-academy");
+  }
 
-.main-footer__copyright::after {
-  @include pseudoblock;
-  flex-shrink: 0;
-  width: 27px;
-  height: 34px;
-  margin-left: 23px;
-  background-color: $decor-grey;
-  mask-image: url("../../icons/stack.svg#html-academy");
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

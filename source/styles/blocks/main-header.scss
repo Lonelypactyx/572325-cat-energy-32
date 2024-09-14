@@ -32,6 +32,14 @@
     gap: 13px;
     width: auto;
   }
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-txt {

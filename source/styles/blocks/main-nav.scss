@@ -32,6 +32,14 @@
       color: #ffffff;
     }
   }
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__toggle {
