@@ -1,6 +1,6 @@
 .main-header {
   @include flex-between;
-  padding: 14px 20px;
+  padding: 13px 20px;
   position: relative;
 
   @media (max-width: $tablet) {

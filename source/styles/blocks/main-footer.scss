@@ -4,10 +4,16 @@
 
 .main-footer__where {
   position: relative;
+  width: 100vw;
 
   & iframe {
     display: block;
     border: none;
+    height: 362px;
+
+    @media (min-width: $tablet) {
+      height: 400px;
+    }
   }
 }
 
@@ -27,17 +33,17 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 61px 70px;
+    padding: 61px 65px;
     gap: 40%;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
     top: 95px;
-    right: 53%;
+    right: calc(50% + 45px);
     width: 565px;
     background-color: #ffffff;
-    padding-inline: 80px;
+    padding-inline: 78px 52px;
     gap: 15%;
     z-index: 1;
   }
@@ -84,7 +90,7 @@
     padding-block: 43px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-block: 54px;
   }
 }
@@ -94,6 +100,7 @@
   height: 24px;
   background-color: $dark-grey;
   mask: url("../../images/logo-txt.svg") no-repeat center;
+  mask-size: 100%;
 
   &:hover,
   &:focus-visible {
